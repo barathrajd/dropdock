@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+bun.lock
+
+# Turborepo
+.turbo/
+
+# Build outputs
+dist/
+.output/
+.vinxi/
+build/
+
+# Local databases & storage
+*.db
+*.db-journal
+*.sqlite
+data/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+
+# Sessions & Agent Memory
+sessions/
+

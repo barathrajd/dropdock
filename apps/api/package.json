@@ -1,0 +1,27 @@
+{
+  "name": "@dropdock/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/index.ts",
+    "build": "bun build src/index.ts --outdir dist --target bun",
+    "test": "bun test",
+    "check": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "bun src/db/migrate.ts"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.758.0",
+    "@aws-sdk/s3-request-presigner": "^3.758.0",
+    "@dropdock/storage": "workspace:*",
+    "drizzle-orm": "^0.40.0",
+    "hono": "^4.7.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "drizzle-kit": "^0.30.5",
+    "typescript": "^5.8.2"
+  }
+}
